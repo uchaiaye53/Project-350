@@ -44,10 +44,10 @@
 					<img class="img-fluid rounded" src="images/ex2.jpg" alt="">
 				</div>
 				<div class="col-6 opt">
-					<div><button class="btn btn-success">Community Centre</button></div>
-					<div><button class="btn btn-success">Restaurant</button></div>
+					<div><a href="CC_Feed.php"><button class="btn btn-success">Community Centre</button></div>
+					<div><a href="FeedRestaurant.php"><button class="btn btn-success">Restaurant</button></div>
 					<div><a href="PhotographyFeed.php"><button class="btn btn-success">Photography</button></a></div>
-					<div><button class="btn btn-success">Catering Services</button></div>
+					<div><a href="FeedSeminar.php"><button class="btn btn-success">Saminar</button></div>
 				</div>
 			</div>
 		</div>
