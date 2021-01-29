@@ -108,90 +108,14 @@
 			while($res = mysqli_fetch_array($query)) {
 			?>
 			<div class="container-fluid">
-				
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8 infos">
-						<p>Name : <?php echo $res['name']; ?></p>
-						<p>Mobile : <?php echo $res['mobile']; ?></p>
-						<p>Email : <?php echo $res['email']; ?></p>
-						<p>Address : <?php echo $res['address']; ?></p>
-						<p>Availibility : <?php echo $res['availibility']; ?></p>
-						<p>Capacity : <?php echo $res['capacity']; ?></p>
-						<p>Offers : <?php echo $res['offers']; ?></p>
-					</div>
-
-					<div class="col-2"></div>
+				<div class="d-flex">
+					<p style="background-color: red;color: white;padding: .3vw;"><?php echo $res['name']; ?></p>
 				</div>
-				<p class="text-center" style="margin: .6vw; color: red; font-weight: bold;"><i>Interiors</i></p>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp1']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp2']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp3']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp4']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp5']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp6']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp7']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp8']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-
+				<a href="Profile_Restaurant.php?id=<?php echo $res['id']; ?>"><button class="btn btn-success">visit</button></a>
 			</div>
-			
-			
-			
-			
-			
-			
 			<hr style="background-color: orange;height: .1vw;">
-			
-			
+
 			<?php
-			
 			}
 			?>
 		</div>
