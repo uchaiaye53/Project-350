@@ -43,7 +43,8 @@
 			border-style: outset;
 			border-color: green;
 		}
-		.total_photographer{
+		
+		.total_photographer, .cc_name{
 			font-size: 1.5vw;
 			color: #fff;
 			background: red;
@@ -51,11 +52,19 @@
 			padding:.5vw;
 			box-shadow: 1vw 1vw 1.5vw black;
 		}
+		.cc_name{
+			margin-right: 1vw;
+		}
 		.infos{
 			box-shadow: 1vw 1vw 1.5vw black;
 		}
 		.interior{
 			margin-bottom: 0.7vw;
+
+		}
+		.interior img{
+			height: 10vw;
+			width: 15vw;
 		}
 		</style>
 	</head>
@@ -66,6 +75,7 @@
 		</div>
 		<?php
 			include'conn.php';
+			
 			if(isset($_POST['search'])){
 				$searchKey = $_POST['search'];
 				$sq = " select * from cc where address like '%$searchKey%' ";
@@ -108,61 +118,11 @@
 			while($res = mysqli_fetch_array($query)) {
 			?>
 			<div class="container-fluid">
+				<div class="d-flex">
+					<p class="cc_name"><?php echo $res['name']; ?></p>
+					<a href="Profile_CC.php?id=<?php echo $res['id']; ?>"><button class="btn btn-success">visit</button></a> <br><br>
+				</div>
 				
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8 infos">
-						<p>Name : <?php echo $res['name']; ?></p>
-						<p>Mobile : <?php echo $res['mobile']; ?></p>
-						<p>Email : <?php echo $res['email']; ?></p>
-						<p>Address : <?php echo $res['address']; ?></p>
-						<p>Availibility : <?php echo $res['availibility']; ?></p>
-						<p>Capacity : <?php echo $res['capacity']; ?></p>
-						<p>Extra Facilities : <?php echo $res['extra_facilities']; ?></p>
-						<p>Average Expenditure : <?php echo $res['avg_exp']; ?></p>
-					</div>
-
-					<div class="col-2"></div>
-				</div>
-				<p class="text-center" style="margin: .6vw; color: red; font-weight: bold;"><i>Interiors</i></p>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp1']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp2']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp3']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp4']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp5']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-
 			</div>
 			
 			
@@ -170,7 +130,7 @@
 			
 			
 			
-			<hr style="background-color: orange;height: .1vw;">
+			
 			
 			
 			<?php
