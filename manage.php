@@ -1,9 +1,8 @@
-<!-- <?php?> -->
 <?php
-// session_start();
-// if(!isset($_SESSION['username'])){
-// header('location:login.php');
-// }
+session_start();
+if(!isset($_SESSION['username'])){
+header('location:Aut_Login.php');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,6 +47,7 @@
 					<div><a href="ReqAs_Restaurant.php"><button class="btn btn-success">Restaurant</button></div>
 					<div><a href="ReqAs_Photography.php"><button class="btn btn-success">Photography</button></a></div>
 					<div><a href="ReqAs_Seminar.php"><button class="btn btn-success">Seminar</button></div>
+					<div><a href="Aut_Logout.php"><button class="btn btn-danger">Logout</button></div>
 				</div>
 			</div>
 		</div>
