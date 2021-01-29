@@ -12,35 +12,41 @@ if(isset($_POST['submit'])){
 	$avg_exp = $_POST['avg_exp'];
 
 	$file= $_FILES['pp'];
+	$file1= $_FILES['pp1'];
+	$file2= $_FILES['pp2'];
+	$file3= $_FILES['pp3'];
+	$file4= $_FILES['pp4'];
+	$file5= $_FILES['pp5'];
+
 	// print_r($file);
 	$filename = $file['name'];
 	$filepath = $file['tmp_name'];
 	$fileerror = $file['error'];
 
 	$file1= $_FILES['pp1'];
-	$filename1 = $file['name'];
-	$filepath1 = $file['tmp_name'];
-	$fileerror1 = $file['error'];
+	$filename1 = $file1['name'];
+	$filepath1 = $file1['tmp_name'];
+	$fileerror1 = $file1['error'];
 
 	$file2= $_FILES['pp2'];
-	$filename2 = $file['name'];
-	$filepath2 = $file['tmp_name'];
-	$fileerror2 = $file['error'];
+	$filename2 = $file2['name'];
+	$filepath2 = $file2['tmp_name'];
+	$fileerror2 = $file2['error'];
 
 	$file3= $_FILES['pp3'];
-	$filename3 = $file['name'];
-	$filepath3 = $file['tmp_name'];
-	$fileerror3 = $file['error'];
+	$filename3 = $file3['name'];
+	$filepath3 = $file3['tmp_name'];
+	$fileerror3 = $file3['error'];
 
 	$file4= $_FILES['pp4'];
-	$filename4 = $file['name'];
-	$filepath4 = $file['tmp_name'];
-	$fileerror4 = $file['error'];
+	$filename4 = $file4['name'];
+	$filepath4 = $file4['tmp_name'];
+	$fileerror4 = $file4['error'];
 
 	$file5= $_FILES['pp5'];
-	$filename5 = $file['name'];
-	$filepath5 = $file['tmp_name'];
-	$fileerror5 = $file['error'];
+	$filename5 = $file5['name'];
+	$filepath5 = $file5['tmp_name'];
+	$fileerror5 = $file5['error'];
 
 
 
