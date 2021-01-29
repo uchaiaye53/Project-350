@@ -109,75 +109,11 @@
 			?>
 			<div class="container-fluid">
 				
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8 infos">
-						<p>Name : <?php echo $res['name']; ?></p>
-						<p>Mobile : <?php echo $res['mobile']; ?></p>
-						<p>Email : <?php echo $res['email']; ?></p>
-						<p>Address : <?php echo $res['address']; ?></p>
-						<p>Availibility : <?php echo $res['availibility']; ?></p>
-						<p>Capacity : <?php echo $res['capacity']; ?></p>
-						<p>Average Expenditure : <?php echo $res['avg_exp']; ?></p>
-					</div>
-
-					<div class="col-2"></div>
-				</div>
-				<p class="text-center" style="margin: .6vw; color: red; font-weight: bold;"><i>Interiors</i></p>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp1']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp2']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
+				<div class="d-flex">
+					<p style="background: red;color: white;padding: 0.3vw;"><?php echo $res['name']; ?></p>
 				</div>
 
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp3']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp4']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp5']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
-
-				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
-						<div class="row">
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp6']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp7']; ?>" class="img-fluid">
-							</div>
-							<div class="col-4 interior">
-								<img src="<?php echo $res['pp8']; ?>" class="img-fluid">
-							</div>
-						</div>
-					</div>
-					<div class="col-2"></div>
-				</div>
+				<a href="Profile_Seminar.php?id=<?php echo $res['id']; ?>"><button class="btn btn-success">visit</button></a>
 
 
 			</div>
