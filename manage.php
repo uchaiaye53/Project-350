@@ -46,7 +46,7 @@
 				<div class="col-6 opt">
 					<div><a href="ReqAs_Community_Centre.php"><button class="btn btn-success">Community Centre</button></div>
 					<div><a href="ReqAs_Restaurant.php"><button class="btn btn-success">Restaurant</button></div>
-					<div><a href="ReqAsCameraman.php"><button class="btn btn-success">Photography</button></a></div>
+					<div><a href="ReqAs_Photography.php"><button class="btn btn-success">Photography</button></a></div>
 					<div><a href="ReqAs_Seminar.php"><button class="btn btn-success">Seminar</button></div>
 				</div>
 			</div>
