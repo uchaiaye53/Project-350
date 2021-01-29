@@ -46,7 +46,7 @@
 				<div class="col-6 opt">
 					<div><a href="CC_Feed.php"><button class="btn btn-success">Community Centre</button></div>
 					<div><a href="FeedRestaurant.php"><button class="btn btn-success">Restaurant</button></div>
-					<div><a href="PhotographyFeed.php"><button class="btn btn-success">Photography</button></a></div>
+					<div><a href="FeedPhotography.php"><button class="btn btn-success">Photography</button></a></div>
 					<div><a href="FeedSeminar.php"><button class="btn btn-success">Saminar</button></div>
 				</div>
 			</div>
